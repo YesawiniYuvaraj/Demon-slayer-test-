@@ -1,6 +1,6 @@
 from pyrogram import *
 from pyrogram.types import *
-from Demon.vers import API_ID, API_HASH, BOT_TOKEN, BOT_OWNER
+from Demon.vars import API_ID, API_HASH
 from aiohttp import ClientSession
 import logging
 import asyncio
@@ -8,7 +8,7 @@ import os
 
 FORMAT = "[None] %(message)s"
 logging.basicConfig(
-    handlers=[logging.FileHandler("logs.txt"), logging.StreamHandler()],
+    handlers=[logging.FileHandler("botlogs.txt"), logging.StreamHandler()],
     level=logging.INFO,
     format=FORMAT,
     datefmt="[%X]",
@@ -16,9 +16,15 @@ logging.basicConfig(
 LOGGER = logging.getLogger('[None]')
 LOGGER.info("BOT STARTING !")
 
+BOT_TOKEN = "" # Your Bot Token Here ....
+TOKEN = BOT_TOKEN
+ID = API_ID
+HASH = API_HASH
+
+# PYROGRAM CLIENT
 pyro = Client(
     "DemonSlayer",
-    api_id=API_ID,
-    api_hash=API_HASH,
+    api_id=ID,
+    api_hash=HASH,
     bot_token=TOKEN
 )

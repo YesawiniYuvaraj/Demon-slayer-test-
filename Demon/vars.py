@@ -7,6 +7,5 @@ def getConfig(name: str):
     except:
         return ""
 
-BOT_OWNER = environ("BOT_OWNER", "")
 API_ID = environ("API_ID", "")
 API_HASH = environ("API_HASH", "")

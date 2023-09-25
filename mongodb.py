@@ -5,17 +5,10 @@ client = pymongo.MongoClientmongodb+srv://pbilakshan:AltruixUB@userbot.gdno4qt.m
 
 
 db = client["Hashira"]
-
- with your collection name)
 collection = db["Default_1"]
-
-
 data = {"key": "value"}
 collection.insert_one(data)
-
-
 result = collection.find({"key": "value"})
-
 
 for document in result:
     print(document)

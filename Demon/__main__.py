@@ -16,7 +16,9 @@ cur = DB.cursor()
 
 async def main() -> None:
     "Demon-Slayer-Bot"
+
     global HELPABLE
+
     for module in ALL_MODULES:
         imported_module = importlib.import_module("Demon.plugins." + module)
         if (

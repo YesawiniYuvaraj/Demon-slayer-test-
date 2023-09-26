@@ -15,7 +15,7 @@ DB = psycopg2.connect(DB_URI)
 cur = DB.cursor()
 
 async def main() -> None:
-    "Demon-Slayer-Bot"
+    "Normal Code To Start And Idle The Demon-Slayer-Bot"
 
     global HELPABLE
 

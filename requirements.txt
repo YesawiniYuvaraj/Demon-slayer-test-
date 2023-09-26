@@ -1,3 +1,10 @@
 pyrogram
 python-dotenv
 TgCrypto
+requests
+aiohttp
+asyncio
+aiofiles
+pymongo
+motor
+psycopg2

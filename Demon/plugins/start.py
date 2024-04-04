@@ -1,7 +1,7 @@
 from pyrogram import Client, filters
 
 
-@app.on_message(filters.private("start"))
+@pyro.on_message(filters.private("start"))
 async def start(client, message):
     await message.reply("Hello Guys you need to start your journey")
 Button = InlineKeyboardMarkup
